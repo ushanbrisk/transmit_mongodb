@@ -16,6 +16,9 @@ BATCH_SIZE = 100000
 PROCESSES = min(12, cpu_count())
 RANGES_FILE = os.path.join(os.path.dirname(__file__), "comment_id_ranges.json")
 
+# 内容过滤：评论content长度小于此值则跳过
+MIN_CONTENT_LENGTH = 10
+
 
 # ========= Worker =========
 def worker(start_comment_id, end_comment_id):
@@ -36,6 +39,7 @@ def worker(start_comment_id, end_comment_id):
         print(f"[{start_comment_id}] start from beginning")
 
     synced_count = 0
+    total_filtered = 0
     while True:
         query = {
             "commentId": {
@@ -50,8 +54,14 @@ def worker(start_comment_id, end_comment_id):
             break
 
         ops = []
+        batch_filtered = 0
         for c in docs:
             doc = dict(c)
+            # 过滤内容过短的评论
+            content = doc.get("content", "")
+            if isinstance(content, str) and len(content) < MIN_CONTENT_LENGTH:
+                batch_filtered += 1
+                continue
             doc.pop("_id", None)
             ops.append(
                 ReplaceOne(
@@ -61,11 +71,17 @@ def worker(start_comment_id, end_comment_id):
                 )
             )
 
+        total_filtered += batch_filtered
+
+        if not ops:
+            last_id = docs[-1]["commentId"]
+            continue
+
         dst.bulk_write(ops, ordered=False)
         last_id = docs[-1]["commentId"]
-        synced_count += len(docs)
+        synced_count += len(ops)
 
-    print(f"[{start_comment_id}] completed, synced {synced_count} records")
+    print(f"[{start_comment_id}] completed, synced {synced_count} records, filtered {total_filtered} short-content comments")
 
 
 # ========= 分片边界管理 =========
