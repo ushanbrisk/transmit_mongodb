@@ -1,0 +1,3 @@
+为了从本地的mongo 把 netease数据库中的传入到目的mongo
+python sync_comments_mp.py
+24进程

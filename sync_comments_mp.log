@@ -1,0 +1,209 @@
+2026-05-11 15:35:25,765 INFO Start multi-process sync
+2026-05-11 15:56:15,773 INFO Start multi-process sync
+2026-05-11 15:56:15,798 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,799 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,799 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,799 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,800 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,800 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,801 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,805 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,808 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,808 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,808 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,809 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,810 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,810 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,812 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,812 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,812 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,815 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,815 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,817 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,817 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,818 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,820 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,820 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:56:15,822 INFO ✅ All workers completed
+2026-05-11 15:57:18,050 INFO Start multi-process sync
+2026-05-11 15:57:18,073 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:57:18,073 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:57:18,075 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:57:18,076 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:57:18,077 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:57:18,077 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:57:18,078 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:57:18,078 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:57:18,081 INFO ✅ All workers completed
+2026-05-11 15:58:21,965 INFO Start multi-process sync
+2026-05-11 15:58:21,988 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:58:21,989 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:58:21,989 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:58:21,991 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:58:21,991 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:58:21,993 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:58:21,993 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:58:21,993 ERROR 'Database' object is not callable
+Traceback (most recent call last):
+  File "/home/luke/distributed_machine_learning/transmit_mongodb/sync_comments_mp.py", line 41, in worker
+    cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+TypeError: 'Database' object is not callable
+2026-05-11 15:58:21,996 INFO ✅ All workers completed
+2026-05-11 16:04:02,082 INFO Start multi-process sync
+2026-05-11 16:04:05,045 INFO Start multi-process sync
