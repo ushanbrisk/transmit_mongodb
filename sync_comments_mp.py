@@ -28,43 +28,47 @@ def get_id_range():
     return first, last
 
 def worker(start_id, end_id):
-    src = MongoClient(SRC_URI, maxPoolSize=PROCESSES,connectTimeoutMS=20000)["netease"]["comments"]
-    dst = MongoClient(DST_URI, maxPoolSize=PROCESSES,connectTimeoutMS=20000)["netease"]["comments"]
+    src = MongoClient(SRC_URI, maxPoolSize=PROCESSES)["netease"]["comments"]
+    dst = MongoClient(DST_URI, maxPoolSize=PROCESSES)["netease"]["comments"]
 
-    last_id = start_id
+    last_doc = dst.find({
+        "_id": {"$gte": start_id, "$lte": end_id}
+    }).sort("_id", -1).limit(1)
+
+    if last_doc.count() > 0:
+        last_id = last_doc[0]["_id"]
+        print(f"[{start_id}] resume from {last_id}")
+    else:
+        last_id = start_id
+        print(f"[{start_id}] start from beginning")
+
     while True:
-        try:
-            query = {
-                "_id": {
-                    "$gt": last_id,
-                    "$lt": end_id
-                }
+        query = {
+            "_id": {
+                "$gt": last_id,
+                "$lt": end_id
             }
-            cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
-            docs = list(cursor)
-            if not docs:
-                break
-
-            ops = []
-            for c in docs:
-                doc = dict(c)
-                doc.pop("_id", None)
-                ops.append(
-                    ReplaceOne(
-                        {"commentId": doc["commentId"]},
-                        doc,
-                        upsert=True
-                    )
-                )
-
-            dst.bulk_write(ops, ordered=False)
-            last_id = docs[-1]["_id"]
-
-            print(f"[{start_id}] synced up to {last_id}")
-
-        except Exception as e:
-            # logging.exception(e)
+        }
+        cursor = src.find(query).sort("_id", 1).limit(BATCH_SIZE)
+        docs = list(cursor)
+        if not docs:
             break
+
+        ops = []
+        for c in docs:
+            doc = dict(c)
+            doc.pop("_id", None)
+            ops.append(
+                ReplaceOne(
+                    {"commentId": doc["commentId"]},
+                    doc,
+                    upsert=True
+                )
+            )
+
+        dst.bulk_write(ops, ordered=False)
+        last_id = docs[-1]["_id"]
+        print(f"[{start_id}] synced up to {last_id}")
 
 
 def main():
